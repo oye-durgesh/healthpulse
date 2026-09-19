@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/healthpulse",
+  "version": "1.0.0",
+  "description": "HealthPulse - Your health life in your pocket",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"require('fs').mkdirSync('dist/public',{recursive:true}); require('fs').copyFileSync('index.html','dist/public/index.html')\"",
+    "serve": "node server.js",
+    "typecheck": "node --check server.js"
+  },
+  "dependencies": {
+    "@replit/connectors-sdk": "^0.4.3",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0"
+  }
+}
